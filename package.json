@@ -1,0 +1,17 @@
+{
+  "name": "marp-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build" : "npm run build:ogp && npm run build:html",
+    "build:html" : "marp --html -o _dist/index.html slides.md",
+    "build:ogp" : "marp --image png -o _dist/ogp.png slides.md",
+    "build:pdf": "marp --pdf -o _dist/slides.pdf slides.md"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.1.1"
+  }
+}
